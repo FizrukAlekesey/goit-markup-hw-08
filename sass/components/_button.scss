@@ -1,0 +1,44 @@
+.button {
+    background-color: #188CE8;
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-decoration:none;
+    font-family:inherit ; 
+}
+
+.button {
+    cursor: pointer;
+    font-family:inherit ;
+    border: 1px solid transparent;
+}
+.button-primary {
+    background-color: #188CE8;
+    color: #FFFFFF;
+    display: flex;
+    border: 1px solid transparent;
+    font-family:inherit ;
+    display: inline-block;
+    padding: 10px 32px; 
+    border-radius: 4px;
+    min-width: 216px;
+    text-align: center;
+}
+.button-primary{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+        &:focus,
+        &:hover {
+        background-color: #2196F3;
+        color: #FFFFFF;
+        }
+}

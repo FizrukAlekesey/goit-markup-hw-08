@@ -1,0 +1,41 @@
+.foundation { 
+    
+    font-family: 'roboto';
+    font-style: normal;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #757575;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/img.jpg);
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+.foundation-title{
+    display: block;
+    width: 696px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom:30px;
+}
+.foundation-title{
+    color:#FFFFFF ; 
+    
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}

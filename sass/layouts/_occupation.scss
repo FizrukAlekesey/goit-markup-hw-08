@@ -1,0 +1,35 @@
+.occupation {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.product-actions{
+    position: absolute;
+
+    top: 76%;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.box-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF
+}
+.occupation .list{
+    width:370px;
+    height:294px;
+    
+}
