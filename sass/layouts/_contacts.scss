@@ -1,6 +1,6 @@
 .contact {
     font-family: 'roboto';
-    display: flex;
+    display: none;
     margin-left: auto;
 
     transition-property: color;
@@ -10,15 +10,15 @@
         &:focus {
         color: #2196F3;
         }
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-    }
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-    }
+    // @include mobile {
+    //     max-width: 480px;
+    // }
+    // @include tablet {
+    //     max-width: 768px;
+    // }
+    // @include desktop {
+    //     max-width: 1200px;
+    // }
 }
 .contact  {
     color: #757575 ;

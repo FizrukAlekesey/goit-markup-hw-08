@@ -139,8 +139,7 @@ a {
 .foundation {
   font-family: "roboto";
   font-style: normal;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
   background-color: #757575;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
@@ -152,16 +151,20 @@ a {
 @media screen and (min-width: 480px) {
   .foundation {
     max-width: 480px;
+    padding: 118px 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .foundation {
     max-width: 768px;
+    padding: 118px 204px;
   }
 }
 @media screen and (min-width: 1200px) {
   .foundation {
-    max-width: 1200px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -178,11 +181,35 @@ a {
   font-family: "roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.4285714286;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .foundation-title {
+    width: 360px;
+    height: 84px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 768px) {
+  .foundation-title {
+    width: 360px;
+    height: 84px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foundation-title {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .feature .item {
@@ -216,7 +243,7 @@ a {
   background-color: #F5F4FA;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@in {
   .list-item::before {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);

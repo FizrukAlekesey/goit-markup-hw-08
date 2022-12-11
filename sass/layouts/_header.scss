@@ -12,15 +12,16 @@ border: 1px solid #ECECEC;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-    }
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-    }
+    
+    // @include mobile {
+    //     max-width: 480px;
+    // }
+    // @include tablet {
+    //     max-width: 768px;
+    // }
+    // @include desktop {
+    //     max-width: 1200px;
+    // }
 }
 /*site-nav*/
 .site-nav {
@@ -34,7 +35,7 @@ border: 1px solid #ECECEC;
 .site-nav__link {
     position: relative;
 
-    display: block;
+    display: none;
     padding-top: 32px;
     padding-bottom: 32px;
 
