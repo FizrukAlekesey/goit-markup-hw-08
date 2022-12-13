@@ -3,23 +3,46 @@
     padding-bottom: 60px;
     background-color: #2F303A;
 
-    @include mobile {
-        max-width: 480px;
-    }
-    @include tablet {
-        max-width: 768px;
-    }
-    @include desktop  {
-        max-width: 100%;
-    }
+    
+}
+.footer-list{
+        @include mobile {
+            margin-left:124px;
+        }
+        @include tablet {
+            margin-left: 76px;
+        }
+        @include desktop {
+            margin:0px;}
 }
 
-
 .footer-list .item{
-    font-family: 'Roboto';
-    font-style: normal;
-    list-style:none;
-    margin-bottom: 9px;
+        margin-left: 15px;
+        font-family: 'Roboto';
+        font-style: normal;
+        list-style:none;
+        margin-bottom: 9px;
+        @include mobile {
+        font-family: 'Roboto';
+        font-style: normal;
+        list-style:none;
+        text-align: center;
+        margin-bottom: 9px;
+        }
+    @include tablet {
+        font-family: 'Roboto';
+        font-style: normal;
+        list-style:none;
+        text-align: center;
+        margin-bottom: 9px;
+    }
+    @include desktop {
+        margin-left: 15px;
+        font-family: 'Roboto';
+        font-style: normal;
+        list-style:none;
+        margin-bottom: 9px;
+    }
 }
 .footer-contact{
     color:rgba(255, 255, 255, 0.6);
@@ -47,6 +70,16 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+
+    @include mobile {
+        margin-top: 40px;
+        margin-left:50px;
+    }
+    @include tablet {
+        margin-left: 114px;
+    }
+    @include desktop {
+        margin-left:0px;}
 }
 .footer .container{
     align-items: baseline;
@@ -62,10 +95,29 @@
 .footer .icon-list{ 
     display: flex;
     align-items: center;
+    @include mobile {
+        margin-top: 10px;
+        margin-left:15px;
+    }
+    @include tablet {
+        margin-top: 10px;
+        margin-left: 80px;
+    }
+    @include desktop {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
 }
 
 .footer-seti{
-    margin-left: 70px;
+    @include mobile {
+        margin-left:114px;
+    }
+    @include tablet {
+        margin-left: 134px;
+    }
+    @include desktop {
+        margin-left: 70px;}
 }
 .footer-link{
     margin: 0;
@@ -98,22 +150,34 @@
 
 
 .foot-form-field{
-
-    margin-left: 93px;
+    margin: 0;
+    padding: 0;
+    // margin-left: 93px;
     position: relative;
-;
-
     display: flex;
     flex-direction: column; 
 }
 .form-title{
-    padding-bottom: 20px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    @include mobile {
+        margin-top: 60px;
+        margin-left:127px;
+    }
+    @include tablet {
+        margin-top: 60px;
+        margin-left: 281px;
+    }
+    @include desktop{
+        margin-top: 0;
+        margin-left: 83px;
+        margin-bottom: -5px;
+    }
 }
 
 .foot-form-input{
@@ -122,10 +186,24 @@
     width: 358px;
     height: 50px;
     background-color: #2F303A;
-
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    @include mobile {
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 450px;
+        height: 50px;
+    }
+    @include tablet {
+        margin-left: 159px;
+        width: 450px;
+        height: 50px;
+    }
+    @include desktop {
+        margin-left: 83px;
+        width: 358px;
+        height: 50px;}
 }
 .foot-btn{ 
     margin-left: 12px;
@@ -142,6 +220,16 @@
         background-color: #188CE8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
+        @include mobile {
+        margin-top: 20px;
+        margin-left:120px;
+        }
+        @include tablet {
+        margin-top: 20px;
+        margin-left: 281px;
+        }
+        @include desktop {
+        margin-left: 12px;}
 }
 .foot-btn .text{
     padding-left: 25px;
@@ -158,8 +246,16 @@
 }
 
 .icon-foot{
-    
     position: absolute;
-    right: 28px;
-    bottom: 15%;
+        @include mobile {
+        right: 35%;
+        bottom: 7%;
+        }
+        @include tablet {
+        right: 39%;
+        bottom: 7%;
+        }
+        @include desktop {
+        right: 28px;
+        bottom: 15%;}
 }

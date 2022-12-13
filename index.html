@@ -36,6 +36,43 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button data-menu-open type="button" class="menu-open" > 
+                <svg class="icon-menu" width="24" height="24" >
+                    <use href="./images/menu.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            <div class="mob-menu  is-hidden"data-menu>
+                <div class="container" >
+                
+                    <button data-menu-close type="button" class="menu-close" >
+                    <svg class="icon-close"width="18" height="18" >
+                    <use href="./images/close.svg#icon-close-black"></use>
+                    </svg>
+                    </button>
+                    <ul class="menu-nav list">
+                        <li class="menu-mob__item"><a href="./index.html" class="menu-mob__link current">Студія</a></li>
+                        <li class="menu-mob__item"><a href="portfolio.html" class="menu-mob__link">Портфоліо</a></li>
+                        <li class="menu-mob__item"><a href="" class="menu-mob__link">Контакти</a></li>
+                    </ul> 
+                
+                
+                    <ul class="menu-contact list">
+                        <li class="menu-con__item">
+                        <a href="tel:+380961111111" class=" menu-con-tel">+38 096 111 11 11</a></li>
+                        <li class="menu-con__item">
+                        <a href="mailto:info@devstudio.com" class="menu-con-mail">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-soc list">
+                        <li class="menu-soc__item"><a href="" class="menu-soc__link">Instagram</a> </li>
+                        <li class="menu-soc__item"><a href="" class="menu-soc__link">Twitter</a></li>
+                        <li class="menu-soc__item"><a href="" class="menu-soc__link">Facebook</a></li>
+                        <li class="menu-soc__item"><a href="" class="menu-soc__link">LinkedIn</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
         </nav> 
     </div>
 </header> 
@@ -74,9 +111,9 @@
     </div>
     </section> 
 <!--Чим ми займаємося-->
-    <!-- <section class="section ">
+    <section class="section ">
         <div class="container">
-            <h2 class="section-title">Чим ми займаємося</h2>
+            <h2 class="section-title ">Чим ми займаємося</h2>
                 <ul class="occupation list">
                     <li class="box1"><img src="./images/img1-1.jpg" alt="Компьютер" 
                         width="370"
@@ -103,7 +140,7 @@
                     </li>
                 </ul>
                 </div>
-    </section> -->
+    </section> 
 <!--tima-->
 <div>
     <section class="section team">
@@ -122,7 +159,7 @@
                             media="(max-width: 767px)"
                             >
                             <img 
-                        src="./images/tima/tim-mob1.jpg" alt="фото хлопця с бородою який посмiхаетсья"
+                        src="./images/tima/tim-mob1.jpg" alt="фото хлопця с бородою який посмiхаетсья" width="270"
                         >
                         </picture>
                         <div class="team-heading">
@@ -162,8 +199,20 @@
                     </li>
 
                     <li class="item">
-                        <img  src="./images/tima/tim-desk2.jpg" alt="фото блондынки в окулярах яка посмiхаеться "
+                        <picture>
+                            <source srcset="./images/tima/tim-desk2.jpg 1x,
+                            ./images/tima/tim-desk2-2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/tima/tim-tab2.jpg 1x, ./images/tima/tim-tab2-2x.jpg 2x" 
+                            media="(min-width: 768px)"
                             >
+                            <source srcset="./images/tima/tim-mob2.jpg 1x, ./images/tima/tim-mob2-2x.jpg 2x" 
+                            media="(max-width: 767px)"
+                            >
+                            <img 
+                        src="./images/tima/tim-mob2.jpg" alt="фото хлопця с бородою який посмiхаетсья" width="270"
+                        >
+                        </picture>
                         <div class="team-heading">
                             <h3 class="team-title">Ольга Рєпіна</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -201,8 +250,20 @@
                     </li>
 
                     <li class="item">
-                        <img class="team-foto" src="./images/tima/tim-desk3.jpg" alt="фото молодого хлопця в бiлiй сорочцi"
-                    width="270">
+                        <picture>
+                            <source srcset="./images/tima/tim-desk3.jpg 1x,
+                            ./images/tima/tim-desk3-2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/tima/tim-tab3.jpg 1x, ./images/tima/tim-tab3-2x.jpg 2x" 
+                            media="(min-width: 768px)"
+                            >
+                            <source srcset="./images/tima/tim-mob3.jpg 1x, ./images/tima/tim-mob3-2x.jpg 2x" 
+                            media="(max-width: 767px)"
+                            >
+                            <img 
+                        src="./images/tima/tim-mob3.jpg" alt="фото хлопця с бородою який посмiхаетсья" width="270"
+                        >
+                        </picture>
                         <div class="team-heading">
                             <h3 class="team-title">Микола Тарасов</h3>
                             <p class="team-text">Marketing</p>
@@ -240,8 +301,18 @@
                     </li>
 
                     <li class="item">
-                        <img class="team-foto"  src="./images/tima/tim-desk4.jpg" alt="фото чорно волосого хлопця в окулярах"
-                    width="270">
+                        <picture>
+                            <source srcset="./images/tima/tim-desk4.jpg 1x,
+                            ./images/tima/tim-desk4-2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/tima/tim-tab4.jpg 1x, ./images/tima/tim-tab4-2x.jpg 2x" 
+                            media="(min-width: 768px)"
+                            >
+                            <source srcset="./images/tima/tim-mob4.jpg 1x, ./images/tima/tim-mob4-2x.jpg 2x" 
+                            media="(max-width: 767px)"
+                            >
+                            <img src="./images/tima/tim-mob4.jpg" alt="фото чорно волосого хлопця в окулярах"width="270">
+                        </picture> 
                         <div class="team-heading">
                             <h3 class="team-title">Михайло Єрмаков</h3>
                             <p class="team-text">UI Designer</p>
@@ -482,5 +553,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script> 
 </body>
 </html>

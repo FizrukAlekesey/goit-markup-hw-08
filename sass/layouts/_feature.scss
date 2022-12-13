@@ -1,7 +1,6 @@
-.feature .item {
-    //  
+.feature .item { 
     width: 100%;
-    // flex-basis: calc((100% - 90px) / 4);
+    
 }
 .feature {
     display: flex;
@@ -56,6 +55,7 @@
     text-align: center;
     text-decoration:none;
     letter-spacing: 0.03em;
+
 }
 .feature-title {
     margin-bottom: 10px;
@@ -63,6 +63,10 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    @include mobile {
+    text-align: center;
+    }
+    
 }
 .feature-text{
     font-weight: 400;

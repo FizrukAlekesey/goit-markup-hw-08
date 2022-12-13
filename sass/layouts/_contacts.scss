@@ -10,15 +10,16 @@
         &:focus {
         color: #2196F3;
         }
-    // @include mobile {
-    //     max-width: 480px;
-    // }
-    // @include tablet {
-    //     max-width: 768px;
-    // }
-    // @include desktop {
-    //     max-width: 1200px;
-    // }
+        @include mobile {
+        display: none;
+        }
+        @include tablet {
+        display:block;
+        padding-left: 20px;
+        }
+        @include desktop {
+        display:flex;
+        }
 }
 .contact  {
     color: #757575 ;
@@ -26,12 +27,26 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    @include tablet {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.02em;
+        color: #757575;
+        }
+        @include desktop {
+        color: #757575 ;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        }
 }
 .contact__icon {
     width: 16px;
     height: 16px;
     margin-right: 10px;
-    
     fill: currentColor;
 }
 .contact__tel {
@@ -52,7 +67,15 @@
 }
 
 .contact__item:not(:last-child){
-    margin-right: 50px;
+    @include tablet {
+        padding-bottom: 10px;
+    }
+    @include desktop {
+        padding: 0;
+        margin-right: 40px;
+        
+        }
+    
 }
 
 

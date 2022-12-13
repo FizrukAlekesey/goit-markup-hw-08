@@ -1,6 +1,15 @@
 @import'./base/common';
 @import'./base/reset';
 
+
+@import'./utils/mixins';
+
+@import'./components/container';
+@import'./components/title';
+@import'./components/button';
+@import'./components/logo';
+@import'./components/modal';
+
 @import './layouts/header';
 @import './layouts/foundation';
 @import './layouts/feature';
@@ -14,10 +23,4 @@
 @import './layouts/cry';
 
 @import'./utils/vars';
-@import'./utils/mixins';
 
-@import'./components/container';
-@import'./components/title';
-@import'./components/button';
-@import'./components/logo';
-@import'./components/modal';

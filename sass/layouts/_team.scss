@@ -4,11 +4,11 @@
     gap: 30px;
     background: #F5F4FA;
 }
-// .team .list .title{
-//     font-weight: 700;
-//     font-size: 18px;
-//     line-height: 2;
-// }
+.team .list .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
 .team .list, .title {
     color:#212121;
 }
@@ -33,7 +33,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    // text-align: center;
+    text-align: center;
     letter-spacing: 0.03em;
 
     
@@ -42,7 +42,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
-    // text-align: center;
+    text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 16px;
 }
@@ -51,7 +51,7 @@
     border-radius: 0px;
 }
 .team-heading{
-    // padding:50px ;
+    padding:30px ;
     border-bottom:1px solid #eee; 
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
@@ -62,6 +62,14 @@
     flex-wrap: wrap;
     list-style:none;
     gap: 10px;
+        @include mobile{
+        margin-left: 95px;
+        } 
+        @include tablet {
+        margin-left: 44px;}
+        @include desktop {
+        margin-left:  0;
+    }
 }
 .team-options{
     content:"";
