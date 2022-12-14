@@ -1,6 +1,6 @@
 .occupation {
+    display: none;
     position: relative;
-    display: flex;
     gap: 30px;
     @include mobile {
         display: none;

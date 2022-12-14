@@ -9,4 +9,13 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+
+        @include tablet {
+            max-width: 1199px;
+        display: none;
+        }
+        @include desktop {
+        min-width: 1200px;
+        display: block;
+            }
 }

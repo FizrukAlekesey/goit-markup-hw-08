@@ -66,6 +66,12 @@
     @include mobile {
     text-align: center;
     }
+    @include tablet {
+        text-align: left;
+    }
+    @include desktop {
+        text-align: left;
+    }
     
 }
 .feature-text{

@@ -6,23 +6,27 @@
     
 }
 .footer-list{
+        margin-bottom: 60px;
         @include mobile {
-            margin-left:124px;
+        // margin-left:124px;
         }
         @include tablet {
-            margin-left: 76px;
+            // margin-left: 76px;
         }
         @include desktop {
             margin:0px;}
 }
 
 .footer-list .item{
-        margin-left: 15px;
+        
+        margin-left: 45px;
         font-family: 'Roboto';
         font-style: normal;
         list-style:none;
+        text-align: center;
         margin-bottom: 9px;
         @include mobile {
+        margin-left: 124px;
         font-family: 'Roboto';
         font-style: normal;
         list-style:none;
@@ -40,6 +44,7 @@
         margin-left: 15px;
         font-family: 'Roboto';
         font-style: normal;
+        text-align: left;
         list-style:none;
         margin-bottom: 9px;
     }
@@ -63,6 +68,7 @@
 }
 
 .footer-title{
+    margin-left: 40px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -72,11 +78,11 @@
     margin-bottom: 20px;
 
     @include mobile {
-        margin-top: 40px;
-        margin-left:50px;
+        // margin-top: 40px;
+        margin-left:120px;
     }
     @include tablet {
-        margin-left: 114px;
+        // margin-left: 114px;
     }
     @include desktop {
         margin-left:0px;}
@@ -93,15 +99,16 @@
 } 
 
 .footer .icon-list{ 
+    
     display: flex;
     align-items: center;
     @include mobile {
-        margin-top: 10px;
-        margin-left:15px;
+        // margin-top: 10px;
+        margin-left:75px;
     }
     @include tablet {
         margin-top: 10px;
-        margin-left: 80px;
+        // margin-left: 80px;
     }
     @include desktop {
         margin-top: 10px;
@@ -110,11 +117,13 @@
 }
 
 .footer-seti{
+    margin-bottom: 60px;
+    margin-left: 50px;
     @include mobile {
-        margin-left:114px;
+        
     }
     @include tablet {
-        margin-left: 134px;
+        // margin-left: 134px;
     }
     @include desktop {
         margin-left: 70px;}
@@ -158,7 +167,8 @@
     flex-direction: column; 
 }
 .form-title{
-    
+    margin-bottom: 20px;
+    margin-left: 50px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -166,11 +176,9 @@
     text-transform: uppercase;
     color: #FFFFFF;
     @include mobile {
-        margin-top: 60px;
         margin-left:127px;
     }
     @include tablet {
-        margin-top: 60px;
         margin-left: 281px;
     }
     @include desktop{
@@ -181,9 +189,10 @@
 }
 
 .foot-form-input{
+    
     padding-left: 16px;
     
-    width: 358px;
+    width: 100%;
     height: 50px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -192,7 +201,7 @@
     @include mobile {
         margin-top: 20px;
         margin-left: 5px;
-        width: 450px;
+        width: 100%;
         height: 50px;
     }
     @include tablet {
@@ -206,7 +215,8 @@
         height: 50px;}
 }
 .foot-btn{ 
-    margin-left: 12px;
+    margin-top: 20px;
+    margin-left: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -222,7 +232,7 @@
         }
         @include mobile {
         margin-top: 20px;
-        margin-left:120px;
+        margin-left:140px;
         }
         @include tablet {
         margin-top: 20px;
@@ -233,7 +243,7 @@
 }
 .foot-btn .text{
     padding-left: 25px;
-    
+        
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -246,16 +256,22 @@
 }
 
 .icon-foot{
+        right: 25%;
+        bottom: 7%;
     position: absolute;
         @include mobile {
-        right: 35%;
+        right: 31%;
         bottom: 7%;
         }
         @include tablet {
-        right: 39%;
+        right: 37%;
         bottom: 7%;
         }
         @include desktop {
         right: 28px;
         bottom: 15%;}
+}
+
+.balance{
+    justify-content: space-around;
 }

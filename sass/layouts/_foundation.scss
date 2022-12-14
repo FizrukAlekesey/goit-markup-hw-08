@@ -7,7 +7,7 @@
     padding: 118px 60px;
     background-color: #757575;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),url(../../images/hero-bg-mob.jpg);
+    rgba(47, 48, 58, 0.4)),url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,7 +21,7 @@
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../../images/hero-bg-mob-2х.jpg);
+        url(../images/hero-bg-mob-2х.jpg);
         }
     
     @include mobile {
@@ -30,12 +30,12 @@
         background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hero-bg-tab.jpg);
+            url(../images/hero-bg-tab.jpg);
             @include retina  {
         background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hero-bg-tab-2х.jpg);
+            url(../images/hero-bg-tab-2х.jpg);
             }
     }
     @include tablet {
@@ -44,12 +44,12 @@
         background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hero-bg-desk.jpg);
+            url(../images/hero-bg-desk.jpg);
             @include retina  {
         background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hero-bg-desk-2x.jpg);
+            url(../images/hero-bg-desk-2x.jpg);
             }
     }
     @include desktop  {
@@ -69,6 +69,7 @@
 .foundation-title{
     color:#FFFFFF ; 
     
+    width: 100%;
     font-family: 'roboto';
     font-style: normal;
     font-weight: 900;

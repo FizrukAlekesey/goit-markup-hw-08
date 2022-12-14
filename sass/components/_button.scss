@@ -29,7 +29,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    
     line-height: 1.88;
 
     align-items: center;
@@ -41,4 +41,12 @@
         background-color: #2196F3;
         color: #FFFFFF;
         }
+        @include mobile {
+        font-size: 16px;
+        }
+        @include tablet {
+        font-size: 16px;
+        }
+        @include desktop {
+        font-size: 16px;}
 }
