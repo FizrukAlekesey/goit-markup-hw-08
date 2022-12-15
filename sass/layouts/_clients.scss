@@ -12,14 +12,19 @@
     gap: 30px;
     padding-top: 15px;
     @include mobile {
-        max-width: calc((100% - 60px) / 2);
+        width: 210px;
+        height: 92px;
+        
     }
     @include tablet {
-        
-        width: calc((100% - 30px) / 3);
+        width: 226px;
+        height: 92px;
+        ;
     }
     @include desktop  {
-        width: calc((100% - 30px) / 6);
+        width: 170px;
+        height: 92px;
+        
     }
 } 
 

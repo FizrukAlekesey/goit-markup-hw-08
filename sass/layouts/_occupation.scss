@@ -1,8 +1,7 @@
-.occupation {
+.services{
     display: none;
-    position: relative;
-    gap: 30px;
-    @include mobile {
+    
+        @include mobile {
         display: none;
         }
         @include tablet {
@@ -13,6 +12,23 @@
         display: flex;
         }
 }
+
+.occupation {
+    display: flex;
+    position: relative;
+    gap: 30px;
+        @include mobile {
+        display: none;
+        }
+        @include tablet {
+        display: none;
+        text-decoration:none;
+        }
+        @include desktop {
+        display: flex;
+        }
+}
+
 
 .product-actions{
     position: absolute;

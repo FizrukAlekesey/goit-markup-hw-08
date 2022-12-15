@@ -128,7 +128,7 @@ border: 1px solid #ECECEC;
     position: fixed;
     top: 0;
     left: 0;
-    width: 480px;
+    width: 100%;
     height: 796px;
     background-color: #fff;
     > .container{
@@ -186,14 +186,17 @@ border: 1px solid #ECECEC;
     line-height: calc(28 / 24);
     letter-spacing: 0.02em;
     color: #757575;
+    
 }
 .menu-con-tel{
     font-weight: 500;
-    font-size: 34px;
+    font-size: 26px;
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
     color: #2196F3;
-    
+    @include mobile {
+        font-size: 34px;
+        }
 }
 .menu-soc{
     display: flex;
@@ -208,16 +211,20 @@ border: 1px solid #ECECEC;
     margin-right: 10px;
     margin-left: 10px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;
     color: #2196F3;
-        
+        @include mobile {
+        font-size: 18px;
+        }
 }
 .menu-close{
+    
 display: block;
 margin-left: auto;
 margin-bottom: 10px;
+margin-right: 10px;
     @include tablet {
         display:none;
         }
@@ -226,6 +233,7 @@ margin-bottom: 10px;
         }
 }
 .menu-close{
+    
     position: absolute;
     top: 8px;
     right:8px ;
@@ -236,6 +244,7 @@ margin-bottom: 10px;
     border-radius: 50%;
 }
 .menu-close .icon-close{
+    
     position: absolute;
     top: 50%;
     left: 50%;

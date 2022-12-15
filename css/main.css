@@ -80,6 +80,33 @@ a {
   padding-bottom: 94px;
 }
 
+.section-title {
+  padding-top: 0;
+  color: #212121;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 450px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
 .button {
   background-color: #188CE8;
   color: #FFFFFF;
@@ -729,7 +756,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
+  width: 100%;
   height: 796px;
   background-color: #fff;
 }
@@ -802,10 +829,15 @@ a {
 
 .menu-con-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 450px) {
+  .menu-con-tel {
+    font-size: 34px;
+  }
 }
 
 .menu-soc {
@@ -823,16 +855,22 @@ a {
   margin-right: 10px;
   margin-left: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 450px) {
+  .menu-soc__link {
+    font-size: 18px;
+  }
 }
 
 .menu-close {
   display: block;
   margin-left: auto;
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 @media screen and (min-width: 768px) {
   .menu-close {
@@ -882,17 +920,18 @@ a {
 }
 
 .foundation {
+  max-width: 100%;
+  height: 100%;
   font-family: "roboto";
   font-style: normal;
-  padding: 118px 60px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #757575;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-mob.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100%;
-  height: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -904,8 +943,7 @@ a {
 }
 @media screen and (min-width: 450px) {
   .foundation {
-    max-width: 480px;
-    padding: 118px 60px;
+    min-width: 481px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-tab.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
   }
@@ -918,7 +956,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .foundation {
-    max-width: 768px;
+    min-width: 769px;
     padding: 118px 204px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-desk.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk.jpg);
@@ -932,7 +970,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .foundation {
-    max-width: 1600px;
+    max-width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -960,9 +998,8 @@ a {
 }
 @media screen and (min-width: 450px) {
   .foundation-title {
-    width: 360px;
-    height: 84px;
     font-size: 26px;
+    text-align: center;
     line-height: 1.62;
   }
 }
@@ -994,6 +1031,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 60px;
 }
 
 .feature .list .item {
@@ -1043,23 +1081,12 @@ a {
   background-image: url(../images/astronaut.svg);
 }
 
-.section-title {
-  padding-top: 0;
-  color: #212121;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
-
 .feature-title {
   margin-bottom: 10px;
   Font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 450px) {
@@ -1111,8 +1138,32 @@ a {
   color: #2196F3;
 }
 
-.occupation {
+.services {
   display: none;
+}
+@media screen and (min-width: 450px) {
+  .services {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services {
+    display: none;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.occupation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   gap: 30px;
 }
@@ -1427,17 +1478,20 @@ a {
 }
 @media screen and (min-width: 450px) {
   .clients__options {
-    max-width: calc((100% - 60px) / 2);
+    width: 210px;
+    height: 92px;
   }
 }
 @media screen and (min-width: 768px) {
   .clients__options {
-    width: calc((100% - 30px) / 3);
+    width: 226px;
+    height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__options {
-    width: calc((100% - 30px) / 6);
+    width: 170px;
+    height: 92px;
   }
 }
 
@@ -1993,16 +2047,4 @@ a {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
-}
-@media screen and (min-width: 768px) {
-  .visually-hidden {
-    max-width: 1199px;
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .visually-hidden {
-    min-width: 1200px;
-    display: block;
-  }
 }/*# sourceMappingURL=main.css.map */

@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom:60px ;
 }
 .feature .list .item {
     width:270px;
@@ -44,24 +45,13 @@
     background-image: url(../images/astronaut.svg);
 }
 
-.section-title {
-    padding-top: 0;
-    color: #212121 ;
-    margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    text-decoration:none;
-    letter-spacing: 0.03em;
-
-}
 .feature-title {
     margin-bottom: 10px;
     Font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     letter-spacing: 0.03em;
     @include mobile {
     text-align: center;
