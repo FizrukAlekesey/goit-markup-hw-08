@@ -27,8 +27,17 @@
 /*site-nav*/
 .site-nav {
     font-family: 'roboto';
-    display: flex;
-    margin-left: 95px; ;
+    display: none;
+    margin-left: 95px; 
+    @include mobile {
+        display: none;;
+        }
+        @include tablet {
+        display:flex;
+        }
+        @include desktop {
+        display:flex;
+        }
 }
 .site-nav__item:not(:last-child){
     margin-right: 50px;
@@ -110,7 +119,7 @@
 .menu-open .icon-menu{
     position: absolute;
     margin-top: 22px;
-    top: 0%;
+    top: -10px;
     left:87%;
     
 
@@ -125,7 +134,7 @@
         fill: #2196F3;
         }
         @include mobile {
-        top: 0%;
+        top: -8px;
         left:92%;
     }}
 

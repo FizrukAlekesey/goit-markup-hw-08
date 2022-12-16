@@ -10,8 +10,7 @@
     list-style: none; 
     margin: 0 auto;
     gap: 30px;
-    // padding-top: 15px;
-    border: 1px solid #AFB1B8;
+    padding-top: 15px;
     border-radius: 4px;
     @include mobile {
         width: 210px;
