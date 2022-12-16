@@ -32,9 +32,9 @@
     border-radius: 4px;
         @include mobile {
 
-        top: 15%;
+        top: 30px;
         left: 15%;
-        transform: translate(-15%, -15%);
+        transform: translate(-15%);
         width: 450px;
         height:609px;;
         }

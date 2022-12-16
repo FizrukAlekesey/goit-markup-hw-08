@@ -68,7 +68,8 @@
 }
 
 .footer-title{
-    margin-left: 40px;
+    
+    // margin-left: 40px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -78,7 +79,7 @@
     margin-bottom: 20px;
 
     @include mobile {
-        // margin-top: 40px;
+        
         margin-left:120px;
     }
     @include tablet {
@@ -117,6 +118,7 @@
 }
 
 .footer-seti{
+    display: block;
     margin-bottom: 60px;
     margin-left: 50px;
     @include mobile {
@@ -272,6 +274,3 @@
         bottom: 15%;}
 }
 
-.balance{
-    justify-content: space-around;
-}

@@ -3,7 +3,7 @@
     font-family: 'Raleway';
     color: #2196F3;
     font-family:Raleway,sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.2;
     text-decoration:none;
         @include mobile {
@@ -15,7 +15,7 @@
         
         }
         @include tablet {
-        margin-top: 0px;
+        margin-top: 26px;
         font-weight: 700;
         font-size: 24px;
         line-height: calc(28 / 24);
@@ -24,7 +24,7 @@
         @include desktop {
         margin-top: 0px;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 26px;
         line-height: calc(28 / 24);
         letter-spacing: 0.03em;
         }
@@ -37,7 +37,8 @@
     color: #FFFFFF;
 }
 .footer .logo{
-    margin-left: 90px;
+    // text-align: center;
+    margin-left: 100px;
     display: block;
     margin-bottom: 20px;
     @include mobile {
