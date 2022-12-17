@@ -271,7 +271,7 @@ a {
 @media screen and (min-width: 480px) {
   .modal {
     top: 30px;
-    left: 15%;
+    left: 30%;
     -webkit-transform: translate(-15%);
             transform: translate(-15%);
     width: 450px;
