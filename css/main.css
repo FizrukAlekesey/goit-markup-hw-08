@@ -1855,7 +1855,6 @@ a {
 }
 
 .footer .icon-list {
-  margin-top: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1899,9 +1898,6 @@ a {
 .foot-form-field {
   margin: 0;
   padding: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1913,6 +1909,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .foot-form-field {
+    text-align: left;
     margin-left: 84px;
   }
 }
@@ -1946,12 +1943,14 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .form-title {
-    margin: 0;
     text-align: left;
   }
 }
 
 .foot-form-input {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 16px;
   width: 100%;
   height: 50px;
@@ -2042,7 +2041,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .foot-btn .icon-foot {
-    top: 58%;
+    top: 65%;
     right: 25px;
   }
 }

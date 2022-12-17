@@ -130,7 +130,7 @@
 } 
 
 .footer .icon-list{ 
-    margin-top: 10px;
+    // margin-top: 10px;
     align-items: center;
     // @include tablet {
     //     margin-top: 10px;
@@ -175,11 +175,12 @@
 .foot-form-field{
     margin: 0;
     padding: 0;
-    align-items: center;
+    
     position: relative;
     display: flex;
     flex-direction: column; 
     @include desktop{
+        text-align: left;
         margin-left: 84px;
     }
 }
@@ -201,15 +202,14 @@
         justify-content: center;
     }
     @include desktop {
-        margin: 0;
         text-align: left;
-        
+
     }
 }
 
 .foot-form-input{
     
-    // justify-content: center;
+    justify-content: center;
     padding-left: 16px;
     
     width: 100%;
@@ -225,7 +225,7 @@
         height: 50px;
     }
     @include tablet {
-        // margin-left: 154px; 
+        
         width: 450px;
         height: 50px;
     }
@@ -284,7 +284,7 @@
         bottom: 7%;
         }
         @include desktop {
-            top:58%;
+            top:65%;
             right: 25px;
         
     }
