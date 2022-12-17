@@ -1,16 +1,16 @@
 .clients{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    
+    gap: 30px;
 }
 .clients__options{
     content:"";
     width: 170px;
     height: 92px;
     list-style: none; 
-    margin: 0 auto;
     gap: 30px;
-    padding-top: 15px;
+    
     border-radius: 4px;
     @include mobile {
         width: 210px;

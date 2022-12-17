@@ -61,17 +61,10 @@
 .icon-list{
     
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     list-style:none;
     gap: 10px;
-        @include mobile{
-        margin-left: 95px;
-        } 
-        @include tablet {
-        margin-left: 44px;}
-        @include desktop {
-        margin-left:  0;
-    }
 }
 .team-options{
     content:"";

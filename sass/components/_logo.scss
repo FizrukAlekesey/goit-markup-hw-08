@@ -41,16 +41,16 @@
     color: #FFFFFF;
 }
 .footer .logo{
-    // text-align: center;
-    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
     display: block;
     margin-bottom: 20px;
-    @include mobile {
-        margin-left:163px;
-    }
-    @include tablet {
-        // margin-left: 115px;
-    }
+    
+    
     @include desktop {
-        margin-left:15px;}
+        text-align: left;
+        margin-left:15px;
+    }
 }

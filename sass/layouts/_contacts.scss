@@ -15,10 +15,11 @@
         }
         @include tablet {
         display:block;
-        padding-left: 20px;
+        
         }
         @include desktop {
         display:flex;
+        padding-left: 20px;
         }
 }
 .contact  {
@@ -44,6 +45,9 @@
         }
 }
 .contact__icon {
+    
+    text-align: center;
+    
     width: 16px;
     height: 16px;
     margin-right: 10px;
@@ -72,7 +76,7 @@
     }
     @include desktop {
         padding: 0;
-        margin-right: 40px;
+        // margin-right: 40px;
         
         }
     

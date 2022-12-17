@@ -1,4 +1,5 @@
 .footer {
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
@@ -17,16 +18,19 @@
             margin:0px;}
 }
 
+
+
 .footer-list .item{
         
-        margin-left: 45px;
+        
+        
         font-family: 'Roboto';
         font-style: normal;
         list-style:none;
         text-align: center;
         margin-bottom: 9px;
         @include mobile {
-        margin-left: 124px;
+        // margin-left: 20px;
         font-family: 'Roboto';
         font-style: normal;
         list-style:none;
@@ -66,10 +70,22 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;    
 }
-
-.footer-title{
+.footer-seti{
+    justify-content: center;
+    margin-bottom: 60px;
+    @include mobile {
     
-    margin-left: 40px;
+    }
+    @include tablet {
+        margin-left: 134px;
+    }
+    @include desktop {
+        margin-left: 70px;}
+}
+.footer-title{
+    text-align: center;
+    padding-bottom: 20px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -79,19 +95,33 @@
     margin-bottom: 20px;
 
     @include mobile {
-        
-        margin-left:120px;
+        text-align: center;
     }
     @include tablet {
-        // margin-left: 114px;
+        text-align: center;
     }
     @include desktop {
-        margin-left:0px;}
+        text-align: left;
+    }
 }
 .footer .container{
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    @include mobile {
+    justify-content: center;
+    }
+    @include tablet {
+        align-items: baseline;
+        flex-direction:inherit;
+        justify-content: center;
+    }
+    @include desktop{
+        flex-direction:inherit;
+        align-items: baseline;
+    }
 }
 .footer-options{
     content:"";
@@ -100,38 +130,20 @@
 } 
 
 .footer .icon-list{ 
-    
-    display: flex;
+    margin-top: 10px;
     align-items: center;
-    @include mobile {
-        // margin-top: 10px;
-        margin-left:75px;
-    }
-    @include tablet {
-        margin-top: 10px;
-        // margin-left: 80px;
-    }
-    @include desktop {
-        margin-top: 10px;
-        margin-left: 0px;
-    }
+    // @include tablet {
+    //     margin-top: 10px;
+    //     // margin-left: 80px;
+    // }
+    // @include desktop {
+    //     margin-top: 10px;
+    //     // margin-left: 0px;
+    // }
 }
 
-.footer-seti{
-    display: block;
-    margin-bottom: 60px;
-    margin-left: 50px;
-    @include mobile {
-        
-    }
-    @include tablet {
-        // margin-left: 134px;
-    }
-    @include desktop {
-        margin-left: 70px;}
-}
 .footer-link{
-    margin: 0;
+    
     display: flex;
     align-items: center; 
     justify-content: center; 
@@ -163,14 +175,19 @@
 .foot-form-field{
     margin: 0;
     padding: 0;
-    // margin-left: 93px;
+    
     position: relative;
     display: flex;
     flex-direction: column; 
+    @include desktop{
+        margin-left: 84px;
+    }
 }
 .form-title{
+    
+    justify-content: center;
     margin-bottom: 20px;
-    margin-left: 50px;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -178,20 +195,19 @@
     text-transform: uppercase;
     color: #FFFFFF;
     @include mobile {
-        margin-left:127px;
+        justify-content: center;;
     }
     @include tablet {
-        margin-left: 281px;
+        justify-content: center;
     }
-    @include desktop{
-        margin-top: 0;
-        margin-left: 83px;
-        margin-bottom: -5px;
+    @include desktop {
+        text-align: left;
     }
 }
 
 .foot-form-input{
     
+    justify-content: center;
     padding-left: 16px;
     
     width: 100%;
@@ -202,28 +218,28 @@
     border-radius: 4px;
     @include mobile {
         margin-top: 20px;
-        margin-left: 5px;
+        
         width: 100%;
         height: 50px;
     }
     @include tablet {
-        margin-left: 159px;
+        margin-left: 154px; 
         width: 450px;
         height: 50px;
     }
     @include desktop {
-        margin-left: 83px;
+        margin-left: 0px;
         width: 358px;
         height: 50px;}
 }
 .foot-btn{ 
     margin-top: 20px;
-    margin-left: 50px;
+    align-items: center;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid transparent;
-    
+
     width: 200px;
     height: 50px;
     cursor: pointer;
@@ -233,8 +249,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
         @include mobile {
-        margin-top: 20px;
-        margin-left:140px;
+        margin-left: 140px;
         }
         @include tablet {
         margin-top: 20px;
@@ -244,12 +259,9 @@
         margin-left: 12px;}
 }
 .foot-btn .text{
-    padding-left: 25px;
-        
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -257,20 +269,19 @@
     color: #FFFFFF;
 }
 
-.icon-foot{
-        right: 25%;
-        bottom: 7%;
+.foot-btn .icon-foot{
+    
+    padding-left: 7px;
+    justify-content: center;
     position: absolute;
-        @include mobile {
-        right: 31%;
-        bottom: 7%;
-        }
         @include tablet {
         right: 37%;
         bottom: 7%;
         }
         @include desktop {
-        right: 28px;
-        bottom: 15%;}
+            top:65%;
+            right: 25px;
+        
+    }
 }
 
