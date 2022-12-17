@@ -175,7 +175,7 @@ a {
   font-family: "Raleway";
   color: #2196F3;
   font-family: Raleway, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   text-decoration: none;
 }
@@ -227,7 +227,6 @@ a {
           justify-content: center;
   text-align: center;
   display: block;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer .logo {
@@ -1773,7 +1772,6 @@ a {
 
 .footer-title {
   text-align: center;
-  padding-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -1898,10 +1896,14 @@ a {
 .foot-form-field {
   margin: 0;
   padding: 0;
+  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1948,10 +1950,12 @@ a {
 }
 
 .foot-form-input {
+  outline: transparent;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 16px;
+  max-width: 450px;
   width: 100%;
   height: 50px;
   background-color: #2F303A;
@@ -1962,7 +1966,6 @@ a {
 }
 @media screen and (min-width: 480px) {
   .foot-form-input {
-    margin-top: 20px;
     width: 450px;
     height: 50px;
   }
@@ -1982,9 +1985,13 @@ a {
 }
 
 .foot-btn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
-  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2027,11 +2034,10 @@ a {
 }
 
 .foot-btn .icon-foot {
-  padding-left: 7px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
+  margin-left: 10px;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .foot-btn .icon-foot {

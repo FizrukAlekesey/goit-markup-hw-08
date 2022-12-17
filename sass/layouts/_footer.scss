@@ -84,7 +84,7 @@
 }
 .footer-title{
     text-align: center;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
     
     font-weight: 700;
     font-size: 14px;
@@ -175,9 +175,10 @@
 .foot-form-field{
     margin: 0;
     padding: 0;
-    
+    width: 100%;
     position: relative;
     display: flex;
+    align-items: center;
     flex-direction: column; 
     @include desktop{
         text-align: left;
@@ -208,10 +209,10 @@
 }
 
 .foot-form-input{
-    
+    outline: transparent;
     justify-content: center;
     padding-left: 16px;
-    
+    max-width: 450px;
     width: 100%;
     height: 50px;
     background-color: #2F303A;
@@ -219,7 +220,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     @include mobile {
-        margin-top: 20px;
+        
         
         width: 450px;
         height: 50px;
@@ -235,9 +236,10 @@
         height: 50px;}
 }
 .foot-btn{ 
-    display: block;
+    display: flex;
     margin:0 auto;
-    margin-top: 20px;
+    // margin-top: 20px;
+    justify-content: center;
     align-items: center;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -275,10 +277,11 @@
 }
 
 .foot-btn .icon-foot{
-    
-    padding-left: 7px;
+    -webkit-box-pack: center;
+    margin-left: 10px;
+
     justify-content: center;
-    position: absolute;
+    
         @include tablet {
         right: 33%;
         bottom: 7%;
