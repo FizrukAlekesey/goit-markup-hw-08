@@ -1899,6 +1899,9 @@ a {
 .foot-form-field {
   margin: 0;
   padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1943,14 +1946,12 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .form-title {
+    margin: 0;
     text-align: left;
   }
 }
 
 .foot-form-input {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-left: 16px;
   width: 100%;
   height: 50px;
@@ -1963,13 +1964,12 @@ a {
 @media screen and (min-width: 480px) {
   .foot-form-input {
     margin-top: 20px;
-    width: 100%;
+    width: 450px;
     height: 50px;
   }
 }
 @media screen and (min-width: 768px) {
   .foot-form-input {
-    margin-left: 154px;
     width: 450px;
     height: 50px;
   }
@@ -1983,6 +1983,8 @@ a {
 }
 
 .foot-btn {
+  display: block;
+  margin: 0 auto;
   margin-top: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2001,19 +2003,14 @@ a {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-@media screen and (min-width: 480px) {
-  .foot-btn {
-    margin-left: 140px;
-  }
-}
 @media screen and (min-width: 768px) {
   .foot-btn {
     margin-top: 20px;
-    margin-left: 281px;
   }
 }
 @media screen and (min-width: 1200px) {
   .foot-btn {
+    display: inline;
     margin-left: 12px;
   }
 }
@@ -2039,13 +2036,13 @@ a {
 }
 @media screen and (min-width: 768px) {
   .foot-btn .icon-foot {
-    right: 37%;
+    right: 33%;
     bottom: 7%;
   }
 }
 @media screen and (min-width: 1200px) {
   .foot-btn .icon-foot {
-    top: 65%;
+    top: 58%;
     right: 25px;
   }
 }
